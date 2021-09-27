@@ -39,7 +39,6 @@ function updateNavOnLogin() {
 
 // when a user clicks on submit link, show new story form
 function submitStoryClick(evt) {
-	evt.preventDefault();
 	console.debug('addNewStory', evt);
 	$newStoryForm.show();
 }
