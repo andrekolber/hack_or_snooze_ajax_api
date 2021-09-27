@@ -57,7 +57,7 @@ $newStoryForm.on('submit', async function addNewStory() {
 	const $URL = $('#url-input').val();
 	console.log($author, $title, $URL);
 
-	const newStory = storyList.addStory(currentUser, { $author, $title, $URL });
+	const newStory = await storyList.addStory(currentUser, { $author, $title, $URL });
 
 	const story = generateStoryMarkup(newStory);
 
